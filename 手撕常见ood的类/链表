@@ -1,0 +1,15 @@
+这个写出来了
+```code
+function ListNode(val, pointer) {
+  this.val = value
+  this.pointer = pointer
+}
+```
+
+重载没写出来
+```
+function ListNode(val) {
+  this.val = value
+  this.pointer = null
+}
+```
