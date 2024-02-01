@@ -13,3 +13,15 @@ inheritance是踩分点！！
 1. class, field and method    
 2. 如何扩展也就是inheritance将来有新的object好不好加
 
+
+## inheritance
+
+![截屏2024-02-01 21.11.33.png](https://img.xwyue.com/i/2024/02/02/65bc090eda52c.png)
+
+
+## polymorphism
+
+![截屏2024-02-01 21.14.20.png](https://img.xwyue.com/i/2024/02/02/65bc09b7b7deb.png)
+
+## overloading vs overriding
+![截屏2024-02-01 21.17.47.png](https://img.xwyue.com/i/2024/02/02/65bc0a8158509.png)
