@@ -76,4 +76,49 @@ class CustomArray {
   }
 }
 ```
+##### asList(T... a)
+将指定数组转换为 List。
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+##### binarySearch(T[] a, T key)
+在指定的数组中使用二分查找算法搜索指定的元素。
+
+##### copyOf(T[] original, int newLength)
+复制指定的数组，截取或填充零（或 null）以获得所需的长度。
+
+##### equals(T[] a, T[] a2)
+比较两个数组是否相等。
+
+##### fill(T[] a, T val)
+将数组的所有元素替换为指定的值。
+
+##### sort(T[] a)
+对数组进行排序。
+toString(T[] a)
+返回包含数组元素的字符串表示形式。
+
+##### deepEquals(Object[] a1, Object[] a2)
+递归地比较两个数组，如果两个数组包含相同的元素，则返回 true。
+
+##### deepToString(Object[] a)
+返回包含数组元素的深层字符串表示形式。
+
+##### hashCode(T[] a)
+返回数组的哈希码。
+
+##### copyOfRange(T[] original, int from, int to)
+复制指定范围的数组。
+
+##### fill(T[] a, int fromIndex, int toIndex, T val)
+将数组的指定范围内的元素替换为指定的值。
+
+##### sort(T[] a, Comparator<? super T> c)
+
+Integer[] numbers = {5, 2, 9, 1, 5, 6};
+Arrays.sort(numbers);
+使用指定的比较器对数组进行排序。
+
+#####parallelSort(T[] a)
+
+使用并行排序算法对数组进行排序。
 
