@@ -93,11 +93,11 @@ Map 接口表示键值对的映射。
 
 LinkedHashMap常用方法：
 
-put(K key, V value): 将指定的键值对添加到映射表中。
-get(Object key): 返回指定键对应的值。
-remove(Object key): 删除指定键对应的映射。
-clear(): 清空映射表中的所有映射。
-entrySet(): 返回映射表中的所有映射条目。
+put(K key, V value): 将指定的键值对添加到映射表中。   
+get(Object key): 返回指定键对应的值。    
+remove(Object key): 删除指定键对应的映射。    
+clear(): 清空映射表中的所有映射。    
+entrySet(): 返回映射表中的所有映射条目。   
 
 ### SortedMap 接口:
 
