@@ -74,3 +74,6 @@ System.out.println(str1 == str2);  // true，str1 和 str2 引用相同的对象
 ```
 ### ===：
 1.比较值和类型是否都相等。
+
+### 比较字符串应该使用 equals 
+
