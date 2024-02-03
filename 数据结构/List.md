@@ -26,3 +26,46 @@ List 接口： 表示一个有序的集合，可以包含重复的元素。List 
 Arrays 类： 是 java.util 包中的一个工具类，提供了许多有关数组的静态方法。这些方法包括用于数组排序、查找、复制等操作。Arrays 类还包含了一个 asList 方法，用于将数组转换为固定大小的列表，如前面提到的。
 
 
+以下是一些常见的 List 接口的方法：     
+ 
+添加元素：     
+
+boolean add(E element): 将指定的元素追加到列表的末尾。     
+void add(int index, E element): 将指定的元素插入到列表的指定位置。     
+
+获取元素：     
+
+E get(int index): 返回列表中指定位置的元素。    
+int indexOf(Object o): 返回列表中第一次出现指定元素的索引。     
+int lastIndexOf(Object o): 返回列表中最后一次出现指定元素的索引。    
+
+删除元素：     
+
+boolean remove(Object o): 从列表中移除指定元素的第一个匹配项。    
+E remove(int index): 移除列表中指定位置的元素。    
+void clear(): 移除列表中的所有元素。    
+
+替换元素：     
+
+E set(int index, E element): 用指定的元素替换列表中指定位置的元素。      
+
+列表信息：     
+
+int size(): 返回列表中的元素数量。        
+boolean isEmpty(): 如果列表不包含元素，则返回 true。    
+boolean contains(Object o): 如果列表包含指定的元素，则返回 true。     
+
+子列表：     
+
+List<E> subList(int fromIndex, int toIndex): 返回列表中指定的 fromIndex（包括）和 toIndex（不包括）之间的部分视图。    
+
+迭代和遍历：    
+ 
+Iterator<E> iterator(): 返回在列表的元素上进行迭代的迭代器。    
+void forEach(Consumer<? super E> action): 对列表的每个元素执行指定的操作。     
+void forEachOrdered(Consumer<? super E> action): 对列表的每个元素按顺序执行指定的操作。     
+
+数组操作：    
+
+Object[] toArray(): 将列表转换为数组。   
+
