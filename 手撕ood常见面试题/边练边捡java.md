@@ -1,3 +1,8 @@
+## 基本数据类型
+基本数据类型byte short int long float double char boolean
+基本数据类型都是没有属性和方法的 要变成包装类才会有方法
+
+## 基本数据类型的包装类
 ### Integer：
 
 parseInt(String s): 将字符串转换为整数。
@@ -53,3 +58,19 @@ parseBoolean(String s): 将字符串转换为布尔值。
 valueOf(boolean b): 返回一个表示指定布尔值的 Boolean 实例。
 compareTo(Boolean anotherBoolean): 比较两个布尔值。
 toString(): 将布尔值转换为字符串。
+
+### ==：
+1.比较常量，基本数据类型会自动转变类型进行比较
+2.比较对象，会比较对象是否引用同一个地址
+
+```code
+String str1 = new String("hello");
+String str2 = new String("hello");
+
+str1 = str1.intern();  // 将str1放入常量池
+str2 = str2.intern();  // 将str2放入常量池
+
+System.out.println(str1 == str2);  // true，str1 和 str2 引用相同的对象（都在常量池中）
+```
+### ===：
+1.比较值和类型是否都相等。
