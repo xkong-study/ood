@@ -173,3 +173,17 @@ Java中的 TreeSet 的 compareTo 方法是用来做什么的？
 
 回答： computeIfAbsent 方法用于根据指定的键计算值，如果键不存在，则使用给定的函数计算并将值插入到映射中。
 
+NavigableMap 是 Java 中的一个接口，它继承自 SortedMap 接口，用于提供对有序映射（例如 TreeMap）的导航能力。NavigableMap 接口在 Java 6 中引入，为开发人员提供了在有序映射中进行导航的一些额外功能。
+
+NavigableMap 接口提供了一系列的导航方法，允许开发人员在有序映射中执行一些高级的操作，如按范围查找键值对、获取最接近给定键的键值对等。一些常用的方法包括：
+
+lowerEntry(K key) 和 higherEntry(K key)：返回小于/大于给定键的最大/最小键值对。
+
+floorEntry(K key) 和 ceilingEntry(K key)：返回小于等于/大于等于给定键的最大/最小键值对。
+
+pollFirstEntry() 和 pollLastEntry()：分别移除并返回最小和最大的键值对。
+
+subMap(K fromKey, boolean fromInclusive, K toKey, boolean toInclusive)：返回范围在给定键之间的子映射。
+
+通过这些导航方法，开发人员可以更方便地在有序映射中执行各种操作，而不仅仅局限于基本的插入、删除和检索。TreeMap 实现了 NavigableMap 接口，因此可以利用这些导航方法进行高级操作。
+
