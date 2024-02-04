@@ -1,0 +1,175 @@
+在Java中，比较字符串应该使用 equals 方法而不是 == 运算符。在 highestRated 方法中，为什么应该使用 equals 方法而不是 == 运算符？
+
+回答： equals 方法用于比较字符串的内容是否相同，而 == 运算符用于比较对象引用是否相同。在字符串比较时，应该关心内容而不是引用，所以应该使用 equals 方法。
+Java中的基本数据类型有哪些？
+
+回答： Java中的基本数据类型包括整数类型（byte、short、int、long）、浮点数类型（float、double）、字符类型（char）和布尔类型（boolean）。
+JavaScript 中的 === 运算符和 == 运算符的区别是什么？
+
+回答： === 运算符用于比较值和类型是否都相等，而 == 运算符在比较时会进行类型转换。在 JavaScript 中，== 运算符会进行类型转换，而 === 不会。
+在Java中，== 运算符用于比较两个对象的引用是否相同，即它们是否指向内存中的相同对象。那这个是什么意思？
+
+回答： == 运算符在比较对象时，实际上是在比较它们是否指向相同的内存地址。如果两个对象的引用指向相同的内存地址，则 == 返回 true，否则返回 false。
+Java中的长度获取方式，如字符串长度用 length()，数组长度用 length。那对于其他集合类型如 List、Set、Queue 等呢？
+
+回答： 对于其他集合类型，比如 List、Set、Queue 等，可以使用 size() 方法来获取集合的大小。
+在Java中，字符串的字典序是如何比较的？
+
+回答： 字符串的字典序比较是按照 Unicode 码点进行比较的，即比较字符串中每个字符的 Unicode 码点。
+Java中如何获取字符串的字典序，类似于 JavaScript 中的 charCodeAt 方法？
+
+回答： Java中可以使用 charAt(index) 方法获取字符串指定位置的字符，然后可以使用字符的 Unicode 码点进行比较或其他操作。
+Java中的 hashCode 方法是用于什么的？
+
+回答： hashCode 方法用于返回对象的哈希码，主要用于哈希表等数据结构，帮助提高查找效率。
+Java中的 codePointAt 方法是用于什么？
+
+回答： codePointAt 方法用于返回指定索引位置的字符的 Unicode 码点。
+关于 FoodRatings 类的问题，highestRated 方法中存在一些问题，比如未考虑相同评分的情况。
+
+回答： 需要考虑相同评分的情况，可以在比较评分大小后再比较字典序，以确定最高评分的食物。
+Java中的 length() 方法和 length 属性的使用场景有何区别？
+
+回答： length() 方法适用于字符串，而 length 属性适用于数组。对于字符串，使用 length() 方法获取字符数；对于数组，使用 length 属性获取数组长度。
+Java中遍历字符串、数组、队列、List 等不同数据结构时，对于获取长度的方法有什么不同？
+
+回答： 字符串使用 length() 方法，数组使用 length 属性，队列使用 size() 方法，List 使用 size() 方法。
+Java中的集合框架中常见的动态数组和链表分别是什么？
+
+回答： ArrayList 是动态数组，LinkedList 是链表。ArrayList 支持随机访问和快速插入/删除尾部元素，而 LinkedList 支持快速插入/删除任意位置的元素。
+Java中的 computeIfAbsent 方法的使用场景是什么？
+
+回答： computeIfAbsent 方法用于根据指定的键计算值，如果键不存在，则使用给定的函数计算并将值插入到映射中。
+在Java中，Arrays.sort 方法和 PriorityQueue 有何区别？
+
+回答： Arrays.sort 方法用于对数组进行排序，而 PriorityQueue 是一种优先队列，用于实时维护最值，通常用于动态数据集。
+Java中的 PriorityQueue 在比较器中的写法，和 JavaScript 的 sort 方法中比较函数有何异同？
+
+回答： 在比较器中，Java 中使用 (a, b) -> a - b 表示升序排序，JavaScript 中使用 (a, b) => a - b 也表示升序排序。
+Java中的 PriorityQueue 是用来实时维护最值的吗？
+
+回答： 是的，PriorityQueue 在实时数据集中维护最值的过程中，具有高效的插入和删除最值的操作。
+Java中的 TreeSet 是基于什么数据结构实现的？
+
+回答： TreeSet 是基于红黑树实现的，是一种自平衡的二叉搜索树，用于有序集合的实现。
+Java中的 TreeMap 和 TreeSet 有什么区别？
+
+回答： TreeMap 是基于红黑树的有序映射，而 TreeSet 是基于红黑树的有序集合。两者都实现了有序集合的功能。
+Java中的 TreeSet 的 compareTo 方法是用来做什么的？
+
+回答： compareTo 方法用于定义对象的自然排序顺序，通常用于实现 Comparable 接口，以在集合中进行有序排序。
+在Java中，computeIfAbsent 方法的作用是什么？
+
+回答： computeIfAbsent 方法用于根据指定的键计算值，如果键不存在，则使用给定的函数计算并将值插入到映射中。
+Java中的 computeIfAbsent 方法参数中的 k -> new TreeSet<>((a, b) -> ...) 是什么语法？
+
+回答： 这是 Lambda 表达式的语法，表示一个匿名函数，用于在 computeIfAbsent 方法中定义键不存在时的值计算逻辑。
+Java中的 compareTo 方法和 JavaScript 的 sort 方法中比较函数有何异同？
+
+回答： compareTo 方法用于定义对象的自然排序顺序，而 JavaScript 的 sort 方法中的比较函数也是用于指定排序顺序。
+Java中的 fail-fast 是指什么？
+
+回答： fail-fast 是指在集合进行迭代过程中，如果集合被修改（增加或删除元素），则会立即抛出 ConcurrentModificationException 异常，以保证迭代器的一致性。
+Java中的 HashMap 是基于什么原理实现的？
+
+回答： HashMap 是基于哈希表实现的，使用数组和链表（或红黑树）来存储键值对，以提高查找效率。
+Java中的 Objects.equals 方法的作用是什么？
+
+回答： Objects.equals 方法用于比较两个对象是否相等，处理了可能为 null 的情况，安全且准确。
+在Java中，Arrays.sort 方法和 PriorityQueue 的排序机制有何不同？
+
+回答： Arrays.sort 方法是一次性对数组进行排序，而 PriorityQueue 是在动态数据集中实时维护最值。
+Java中的 PriorityQueue 是用来排序的吗？
+
+回答： 是的，PriorityQueue 可以用来实现排序，它在动态数据集中实时维护最值，常用于需要动态维护最值的场景。
+JavaScript 中有没有类似于 Java 的 PriorityQueue 的数据结构？
+
+回答： JavaScript 中没有直接对应 Java PriorityQueue 的数据结构，但可以通过数组和相应的操作实现类似的功能。
+Java中的数组排序和 PriorityQueue 是用于不同的场景吗？
+
+回答： 是的，数组排序适用于一次性排序的场景，而 PriorityQueue 适用于需要实时维护最值的动态数据集场景。
+Java中的 TreeSet 是用来排序的吗？
+
+回答： 是的，TreeSet 是基于红黑树实现的有序集合，用于排序。
+Java中的 TreeSet 和 TreeMap 有何异同？
+
+回答： TreeSet 是基于红黑树的有序集合，而 TreeMap 是基于红黑树的有序映射。两者都实现了有序集合的功能。
+Java中的 TreeSet 的 compareTo 方法是用来做什么的？
+
+回答： compareTo 方法用于定义对象的自然排序顺序，通常用于实现 Comparable 接口，以在集合中进行有序排序。
+在Java中，computeIfAbsent 方法的使用场景是什么？
+
+回答： computeIfAbsent 方法用于根据指定的键计算值，如果键不存在，则使用给定的函数计算并将值插入到映射中。
+Java中的 fail-fast 是指什么？
+
+回答： fail-fast 是指在集合进行迭代过程中，如果集合被修改，迭代器会立即抛出 ConcurrentModificationException 异常，保证迭代器的一致性。
+JavaScript 中有没有自己的哈希表实现？
+
+回答： JavaScript 中没有直接的哈希表实现，但可以使用对象（Object）来模拟哈希表的功能。
+Java中的 HashMap 是基于什么原理实现的？
+
+回答： HashMap 是基于哈希表实现的，使用数组和链表（或红黑树）来存储键值对，以提高查找效率。
+Java中的 Objects.equals 方法的作用是什么？
+
+回答： Objects.equals 方法用于比较两个对象是否相等，处理了可能为 null 的情况，安全且准确。
+在Java中，Arrays.sort 方法和 PriorityQueue 的排序机制有何不同？
+
+回答： Arrays.sort 方法是一次性对数组进行排序，而 PriorityQueue 是在动态数据集中实时维护最值。
+Java中的 PriorityQueue 是用来排序的吗？
+
+回答： 是的，PriorityQueue 可以用来实现排序，它在动态数据集中实时维护最值，常用于需要动态维护最值的场景。
+JavaScript中有没有类似于 Java 的 PriorityQueue 的数据结构？
+
+回答： JavaScript 中没有直接对应 Java PriorityQueue 的数据结构，但可以通过数组和相应的操作实现类似的功能。
+Java中的数组排序和 PriorityQueue 是用于不同的场景吗？
+
+回答： 是的，数组排序适用于一次性排序的场景，而 PriorityQueue 适用于需要实时维护最值的动态数据集场景。
+Java中的 TreeSet 是用来排序的吗？
+
+回答： 是的，TreeSet 是基于红黑树实现的有序集合，用于排序。
+Java中的 TreeSet 和 TreeMap 有何异同？
+
+回答： TreeSet 是基于红黑树的有序集合，而 TreeMap 是基于红黑树的有序映射。两者都实现了有序集合的功能。
+Java中的 TreeSet 的 compareTo 方法是用来做什么的？
+
+回答： compareTo 方法用于定义对象的自然排序顺序，通常用于实现 Comparable 接口，以在集合中进行有序排序。
+在Java中，computeIfAbsent 方法的使用场景是什么？
+
+回答： computeIfAbsent 方法用于根据指定的键计算值，如果键不存在，则使用给定的函数计算并将值插入到映射中。
+Java中的 fail-fast 是指什么？
+
+回答： fail-fast 是指在集合进行迭代过程中，如果集合被修改，迭代器会立即抛出 ConcurrentModificationException 异常，以保证迭代器的一致性。
+JavaScript 中有没有自己的哈希表实现？
+
+回答： JavaScript 中没有直接的哈希表实现，但可以使用对象（Object）来模拟哈希表的功能。
+Java中的 HashMap 是基于什么原理实现的？
+
+回答： HashMap 是基于哈希表实现的，使用数组和链表（或红黑树）来存储键值对，以提高查找效率。
+Java中的 Objects.equals 方法的作用是什么？
+
+回答： Objects.equals 方法用于比较两个对象是否相等，处理了可能为 null 的情况，安全且准确。
+在Java中，Arrays.sort 方法和 PriorityQueue 的排序机制有何不同？
+
+回答： Arrays.sort 方法是一次性对数组进行排序，而 PriorityQueue 是在动态数据集中实时维护最值。
+Java中的 PriorityQueue 是用来排序的吗？
+
+回答： 是的，PriorityQueue 可以用来实现排序，它在动态数据集中实时维护最值，常用于需要动态维护最值的场景。
+JavaScript中有没有类似于 Java 的 PriorityQueue 的数据结构？
+
+回答： JavaScript 中没有直接对应 Java PriorityQueue 的数据结构，但可以通过数组和相应的操作实现类似的功能。
+Java中的数组排序和 PriorityQueue 是用于不同的场景吗？
+
+回答： 是的，数组排序适用于一次性排序的场景，而 PriorityQueue 适用于需要实时维护最值的动态数据集场景。
+Java中的 TreeSet 是用来排序的吗？
+
+回答： 是的，TreeSet 是基于红黑树实现的有序集合，用于排序。
+Java中的 TreeSet 和 TreeMap 有何异同？
+
+回答： TreeSet 是基于红黑树的有序集合，而 TreeMap 是基于红黑树的有序映射。两者都实现了有序集合的功能。
+Java中的 TreeSet 的 compareTo 方法是用来做什么的？
+
+回答： compareTo 方法用于定义对象的自然排序顺序，通常用于实现 Comparable 接口，以在集合中进行有序排序。
+在Java中，computeIfAbsent 方法的使用场景是什么？
+
+回答： computeIfAbsent 方法用于根据指定的键计算值，如果键不存在，则使用给定的函数计算并将值插入到映射中。
+
