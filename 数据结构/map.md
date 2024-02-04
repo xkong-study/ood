@@ -36,5 +36,24 @@ V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunction): 如�
 
 V computeIfPresent(K key, BiFunction<? super K, ? super V, ? extends V> remappingFunction): 如果指定的键在映射中存在且其值不为 null，则尝试使用给定的 remapping 
 
-函数重新计算其值。                         
+函数重新计算其值。     
 
+
+```code
+for(Map.Entry<String,Integer> entry : hashMap.entrySet()){
+    String str = entry.getKey();
+    if(str.contains(prefix)){
+        sum+=entry.getValue();
+       }
+     }
+    return sum;
+  }
+
+  for (String key : myMap.keySet()) {
+      System.out.println(key);
+  }
+
+  for (String value : myMap.values()) {
+    System.out.println(value);
+  }
+```
