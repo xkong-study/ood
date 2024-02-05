@@ -27,3 +27,4 @@ boolean contains(Object o): 如果列表包含指定的元素，则返回 true�
 int size(): 返回列表中的元素数。
 boolean isEmpty(): 如果列表不包含元素，则返回 true。
 Object[] toArray(): 将列表转换为数组。
+numbers.removeIf(number -> number == valueToRemove);
