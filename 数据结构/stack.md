@@ -26,3 +26,26 @@ public class StackExample {
 }
 
 ```
+栈是一种线性的，后进先出的数据结构。手写stack。
+
+```code
+class stack{
+stack = [];
+push(item){
+this.stack.push(item);
+}
+pop(){
+if(this.isEmpty) return "empty";
+return this.items.pop();
+}
+isEmpty(){
+return this.size() == 0;
+}
+size(){
+return this.stack.length;
+}
+peek(){
+return this.stack[stack.length-1]
+}
+}
+```
