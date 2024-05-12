@@ -229,3 +229,14 @@ public class DeleteCustomerAndOrders {
 ```
 
 
+MySQL 查询缓存：     
+
+执行查询语句的时候，会先查询缓存。不过，MySQL 8.0 版本后移除，因为这个功能不太实用       
+
+my.cnf 加入以下配置，重启 MySQL 开启查询缓存：     
+
+```code
+query_cache_type=1
+query_cache_size=600000
+```
+
